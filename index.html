@@ -43,22 +43,29 @@
               modular components with a variety of pages and components.
             </p>
             <div class="header__email">
-              <input type="email" placeholder="Your e-mail address" />
+              <input type="email" class="header__email--input" placeholder="Your e-mail address" />
               <button class="header__email--btn">Get Started</button>
             </div>
-            <p>Our trusted customers</p>
+            <p class="header__customer--title">Our trusted customers</p>
             <img
-              src="/assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+              src="/assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" class="header__customers"
               alt=""
             />
           </div>
-          <img
+          <figure class="header__img--wrapper">
+            <img
             src="/assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
             class="templates__img"
             alt=""
-          />
+            />
+          </figure>
         </div>
       </div>
+      <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="header__blob">
+        <g transform="translate(300,300)">
+            <path d="M176.2,-106.9C208.7,-45.5,201.8,33.5,165.8,99.4C129.9,165.3,65,218.2,-9.2,223.5C-83.4,228.8,-166.9,186.7,-201.6,121.4C-236.4,56.2,-222.6,-32.2,-180.9,-98.9C-139.1,-165.7,-69.6,-210.8,1.2,-211.5C71.9,-212.2,143.8,-168.3,176.2,-106.9Z" fill="#6415ff"></path>
+        </g>
+      </svg>
     </header>
     <div class="container">
       <div class="row"></div>
@@ -66,9 +73,9 @@
     <main>
       <section class="services">
         <div class="container">
-          <div class="row">
-          <h4>FEATURES</h4>
-          <h2>We have Amazing <span class="purple">Service</span></h2>
+          <div class="services__row">
+          <h4 class="section__tag">FEATURES</h4>
+          <h2 class="section__title">We have Amazing <span class="purple">Service</span></h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             dolores sequi quam cumque. Voluptate beatae omnis et eaque cumque!
@@ -77,9 +84,9 @@
               <div class="service">
                 <div class="service__row">
                   <figure class="service__img--wrapper">
-                    <img src="/assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
+                    <img class="service__img" src="/assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
                   </figure>
-                  <div class="service__text">
+                  <div class="service__description">
                     <h2 class="service__title">Secure</h2>
                     <p class="service__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi aut tempora inventore!</p>
                   </div>
@@ -88,9 +95,9 @@
               <div class="service">
                 <div class="service__row">
                   <figure class="service__img--wrapper">
-                    <img src="/assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="">
+                    <img class="service__img" src="/assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="">
                   </figure>
-                  <div class="service__text">
+                  <div class="service__description">
                     <h2 class="service__title">24/7 Support</h2>
                     <p class="service__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi aut tempora inventore!</p>
                   </div>
@@ -99,9 +106,9 @@
               <div class="service">
                 <div class="service__row">
                   <figure class="service__img--wrapper">
-                    <img src="/assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="">
+                    <img class="service__img" src="/assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="">
                   </figure>
-                  <div class="service__text">
+                  <div class="service__description">
                     <h2 class="service__title">Customizable</h2>
                     <p class="service__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi aut tempora inventore!</p>
                   </div>
@@ -110,9 +117,9 @@
               <div class="service">
                 <div class="service__row">
                   <figure class="service__img--wrapper">
-                    <img src="/assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="">
+                    <img class="service__img" src="/assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="">
                   </figure>
-                  <div class="service__text">
+                  <div class="service__description">
                     <h2 class="service__title">Reliable</h2>
                     <p class="service__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi aut tempora inventore!</p>
                   </div>
@@ -121,9 +128,9 @@
               <div class="service">
                 <div class="service__row">
                   <figure class="service__img--wrapper">
-                    <img src="/assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="">
+                    <img class="service__img" src="/assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="">
                   </figure>
-                  <div class="service__text">
+                  <div class="service__description">
                     <h2 class="service__title">Fast</h2>
                     <p class="service__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi aut tempora inventore!</p>
                   </div>
@@ -132,15 +139,14 @@
               <div class="service">
                 <div class="service__row">
                   <figure class="service__img--wrapper">
-                    <img src="/assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="">
+                    <img class="service__img" src="/assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="">
                   </figure>
-                  <div class="service__text">
+                  <div class="service__description">
                     <h2 class="service__title">Easy</h2>
                     <p class="service__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sequi aut tempora inventore!</p>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>

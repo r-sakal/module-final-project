@@ -51,6 +51,100 @@ li {
     list-style: none;
 }
 
+h1 {
+    font-size: 36px;
+}
+.header__description--para {
+    margin: 32px 0;
+}
+
+.header__email {
+    width: 100%;
+    max-width: 450px;
+    height: 70px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__email--input {
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    padding: 20px 192px 20px 32px;
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: border-color 300ms;
+}
+
+.header__email--input::placeholder {
+    font-weight: 500;
+    color: rgb(158, 170, 189);
+}
+
+.header__email--input:hover {
+    border-color: rgba(160,174,192);
+}
+
+.header__email--input:focus,
+.header__email--input:active {
+    outline: transparent solid 2px;
+    outline-offset: 2px;
+    border-color: rgba(100,21,255);
+}
+
+.header__email--btn {
+    z-index: 2;
+    margin: 8px;
+    height: calc(100%-16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms;
+}
+
+.header__email--btn:hover {
+    background-color: rgba(60,13,153);
+}
+
+.header__customers--title {
+    margin-top: 80px;
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.header__customers {
+    margin-top: 16px;
+    padding-right: 128px;
+    opacity: 0.5;
+}
+
+header {
+    position: relative;
+}
+
+.header__blob {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.05;
+    width: 256px;
+    height: 256px;
+    transform: matrix(1, 0, 0, 1, -163, 0);
+}
+
 .purple {
     color: #6415ff;
 }
@@ -99,11 +193,29 @@ li {
 }
 
 .service {
-display: flex;
+    display: flex;
 width: calc(100%/3);
+}
+
+.service__img--wrapper {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #e5e7eb;
+    border-radius: 500px;
+}
+
+.service__img {
+    width: 24px;
+    height: 24px;
 }
 
 .service__description {
     display: flex;
     flex-direction: column;
+}
+
+.service__row {
+    display: flex; 
+    flex-direction: column;
+    padding: 32px 24px;
 }
