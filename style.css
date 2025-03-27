@@ -379,7 +379,6 @@ width: calc(100%/3);
     border: 1px solid rgb(229, 231, 235);
     position: relative;
     margin: 0 56px;
-    display: flex;
 }
 
 
