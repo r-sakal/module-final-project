@@ -6,6 +6,7 @@
     <title>Mod2Final</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/1bc2e2affb.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <section id="landing">
@@ -29,6 +30,40 @@
               <a href="#" class="nav__link nav__link--primary"> Sign Up</a>
             </li>
           </ul>
+          <button class="btn__menu" onclick="openMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="menu__backdrop">
+            <button class="btn_menu btn_menu--close" onclick="closeMenu()">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+              </li>
+              <li class="menu__list">
+                <a href="#features" class="menu__link" onclick="closeMenu()"
+                  >Blog</a
+                >
+              </li>
+              <li class="menu__list">
+                <a class="menu__link no-cursor" onclick="closeMenu()"
+                  >Pricing</a
+                >
+              <li class="menu__list">
+                <a class="menu__link no-cursor" onclick="closeMenu()"
+                  >Contact Us</a
+                >
+              <li class="menu__list">
+                <a class="menu__link no-cursor" onclick="closeMenu()"
+                  >Login</a
+                >
+              <li class="menu__list--primary">
+                <a class="menu__link no-cursor" onclick="closeMenu()"
+                  >Sign Up</a
+                >
+              </li>
+            </ul>
         </div>
       </nav>
     </section>
