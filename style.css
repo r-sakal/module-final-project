@@ -608,14 +608,20 @@ VALUES
     margin-top: 48px;
 }
 
+.affordable {
+    color: rgba(39, 103, 73, 1);
+}
+
 .value:nth-child(1) .value__img--wrapper {
     background-color: #9ae6b4;
-    color: rgba(39, 103, 73, 1);
+}
+
+.professionalism {
+    color: rgba(155, 44, 44, 1)
 }
 
 .value:nth-child(2) .value__img--wrapper {
     background-color: #feb2b2;
-    color: rgba(155, 44, 44, 1)
 }
 
 /*
